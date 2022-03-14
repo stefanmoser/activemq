@@ -68,6 +68,9 @@
     <httpcore-version>4.4.15</httpcore-version>
     <insight-version>1.2.0.Beta4</insight-version>
     <jackson-version>2.13.1</jackson-version>
+    <dynamodb-lock-client-version>1.1.0</dynamodb-lock-client-version>
+    <aws-java-sdk-dynamodb-version>1.12.176</aws-java-sdk-dynamodb-version>
+    <aws-java-sdk-core-version>1.12.176</aws-java-sdk-core-version>
     <jasypt-version>1.9.3</jasypt-version>
     <jaxb-bundle-version>2.2.11_1</jaxb-bundle-version>
     <jetty9-version>9.4.43.v20210629</jetty9-version>
@@ -635,6 +638,23 @@
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-databind</artifactId>
         <version>${jackson-version}</version>
+      </dependency>
+
+      <!-- DynamoDB Lock Client -->
+      <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>dynamodb-lock-client</artifactId>
+        <version>${dynamodb-lock-client-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-dynamodb</artifactId>
+        <version>${aws-java-sdk-dynamodb-version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-core</artifactId>
+        <version>${aws-java-sdk-core-version}</version>
       </dependency>
 
       <!-- Used to configure the activemq logs -->

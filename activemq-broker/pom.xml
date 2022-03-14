@@ -51,6 +51,12 @@
       <artifactId>javax.annotation-api</artifactId>
     </dependency>
 
+    <!-- DynamoDB locking -->
+    <dependency>
+      <groupId>com.amazonaws</groupId>
+      <artifactId>dynamodb-lock-client</artifactId>
+    </dependency>
+
     <!-- =============================== -->
     <!-- Optional Dependencies -->
     <!-- =============================== -->
